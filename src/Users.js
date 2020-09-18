@@ -3,7 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 
 import UsersTable from "./UsersTable";
-
+import GetUsers from "./Api";
 const TestUsers = [
   {
     id: "55faef3e3166640003000000",
@@ -47,10 +47,15 @@ const TestUsers = [
 ];
 
 class Users extends React.Component {
-  state = {};
+  state = {
+    users: [],
+  };
 
-  componentDidMount() {}
+  componentDidMount() {
+    GetUsers().then((users) => this.setState({ users }));
+  }
   render() {
+    const { users } = this.state;
     return (
       <>
         <Typography
@@ -77,7 +82,7 @@ class Users extends React.Component {
           </Grid>
         </Grid>
         <div style={{ height: "400px", marginTop: "75px" }}>
-          <UsersTable users={TestUsers} />
+          <UsersTable users={users} />
         </div>
       </>
     );
