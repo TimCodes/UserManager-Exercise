@@ -3,6 +3,7 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 
 import UsersTable from "./UsersTable";
+import StatCard from "./StatsCard";
 import GetUsers from "./Api";
 import { FormatUserData } from "./Utils";
 
@@ -31,7 +32,12 @@ class Users extends React.Component {
     });
   }
   render() {
-    const { users } = this.state;
+    const {
+      users,
+      totalCampaigns,
+      totalUserInvites,
+      totalteamMembers,
+    } = this.state;
     return (
       <>
         <Typography
@@ -45,7 +51,7 @@ class Users extends React.Component {
         </Typography>
         <Grid container spacing={3} style={{ marginTop: "50px" }}>
           <Grid item xs={12} sm={3}>
-            Total Users
+            <StatCard title="Total Invited Users" value={totalUserInvites} />
           </Grid>
           <Grid item xs={12} sm={3}>
             Total Campaigns
