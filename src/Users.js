@@ -13,6 +13,7 @@ class Users extends React.Component {
     totalCampaigns: 0,
     totalUserInvites: 0,
     totalteamMembers: 0,
+    lastCreatedAt: null,
   };
 
   componentDidMount() {
@@ -22,12 +23,14 @@ class Users extends React.Component {
         totalCampaigns,
         totalUserInvites,
         totalteamMembers,
+        lastCreatedAt,
       } = FormatUserData(rawUsers);
       this.setState({
         users,
         totalCampaigns,
         totalUserInvites,
         totalteamMembers,
+        lastCreatedAt,
       });
     });
   }
@@ -37,6 +40,7 @@ class Users extends React.Component {
       totalCampaigns,
       totalUserInvites,
       totalteamMembers,
+      lastCreatedAt,
     } = this.state;
     return (
       <>
@@ -54,13 +58,13 @@ class Users extends React.Component {
             <StatCard title="Total Invited Users" value={totalUserInvites} />
           </Grid>
           <Grid item xs={12} sm={3}>
-            Total Campaigns
+            <StatCard title="Total Campaigns" value={totalCampaigns} />
           </Grid>
           <Grid item xs={12} sm={3}>
-            Total Team Members
+            <StatCard title="Total Team Members" value={totalteamMembers} />
           </Grid>
           <Grid item xs={12} sm={3}>
-            Last Created at
+            <StatCard title="Last User Added" value={lastCreatedAt} />
           </Grid>
         </Grid>
         <div style={{ height: "400px", marginTop: "75px" }}>

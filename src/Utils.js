@@ -20,7 +20,7 @@ const FormatUserData = (users) => {
     return b["created_at"] - a["created_at"];
   });
 
-  userData.lastCreated = userData.users[0].created_at;
+  userData.lastCreatedAt = userData.users[0].created_at.toDateString();
   userData.totalteamMembers = userData.users.length;
 
   return userData;
