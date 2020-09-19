@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/usermanager-exercise/static/css/main.5f361e03.chunk.css",
+    "main.js": "/usermanager-exercise/static/js/main.789b8dce.chunk.js",
+    "main.js.map": "/usermanager-exercise/static/js/main.789b8dce.chunk.js.map",
+    "runtime-main.js": "/usermanager-exercise/static/js/runtime-main.f161e4db.js",
+    "runtime-main.js.map": "/usermanager-exercise/static/js/runtime-main.f161e4db.js.map",
+    "static/js/2.0502a450.chunk.js": "/usermanager-exercise/static/js/2.0502a450.chunk.js",
+    "static/js/2.0502a450.chunk.js.map": "/usermanager-exercise/static/js/2.0502a450.chunk.js.map",
+    "index.html": "/usermanager-exercise/index.html",
+    "precache-manifest.450d462bdb31c19781b062fe15d6c2b4.js": "/usermanager-exercise/precache-manifest.450d462bdb31c19781b062fe15d6c2b4.js",
+    "service-worker.js": "/usermanager-exercise/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/usermanager-exercise/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.0502a450.chunk.js.LICENSE.txt": "/usermanager-exercise/static/js/2.0502a450.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/usermanager-exercise/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f161e4db.js",
+    "static/js/2.0502a450.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.789b8dce.chunk.js"
+  ]
+}
