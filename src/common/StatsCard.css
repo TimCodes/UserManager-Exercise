@@ -1,0 +1,11 @@
+.stats-card {
+  height: 200px;
+  border: solid lightgray 1px;
+}
+.stats-card__title {
+  font-size: 2.5rem !important;
+}
+
+.stats-card__value {
+  font-size: 3.5rem !important;
+}

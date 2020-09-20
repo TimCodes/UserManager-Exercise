@@ -2,6 +2,7 @@ import * as React from "react";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 
+import "./Users.css";
 import UsersTable from "./UsersTable";
 import StatCard from "../common/StatsCard";
 import GetUsers from "../common/APIUtils";
@@ -53,7 +54,7 @@ class Users extends React.Component {
         >
           Users
         </Typography>
-        <Grid container spacing={3} style={{ marginTop: "50px" }}>
+        <Grid container spacing={3} className="u-margin-top-med">
           <Grid item xs={12} sm={3}>
             <StatCard title="Total Invited Users" value={totalUserInvites} />
           </Grid>
@@ -67,7 +68,7 @@ class Users extends React.Component {
             <StatCard title="Last User Added" value={lastCreatedAt} />
           </Grid>
         </Grid>
-        <div style={{ height: "400px", marginTop: "75px" }}>
+        <div className="u-margin-top-big table-container">
           <UsersTable users={users} key={users.id} />
         </div>
       </>

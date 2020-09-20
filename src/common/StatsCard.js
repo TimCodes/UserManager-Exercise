@@ -3,13 +3,14 @@ import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import Divider from "@material-ui/core/Divider";
+import "./StatsCard.css";
 
 const StatCard = ({ title, value }) => (
-  <Card>
+  <Card className="stats-card">
     <CardContent>
-      <Typography style={{ fontSize: 25 }}>{title}</Typography>
+      <Typography className="stats-card__title">{title}</Typography>
       <Divider />
-      <Typography color="primary" style={{ fontSize: 40 }}>
+      <Typography color="primary" className="stats-card__value">
         {value}
       </Typography>
     </CardContent>
