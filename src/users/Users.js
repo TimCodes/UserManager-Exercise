@@ -3,9 +3,9 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 
 import UsersTable from "./UsersTable";
-import StatCard from "./StatsCard";
-import GetUsers from "./Api";
-import { FormatUserData } from "./Utils";
+import StatCard from "../common/StatsCard";
+import GetUsers from "../common/APIUtils";
+import { FormatUserData } from "../common/DataUtils";
 
 class Users extends React.Component {
   state = {
