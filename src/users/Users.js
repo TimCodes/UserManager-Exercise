@@ -17,24 +17,24 @@ class Users extends React.Component {
     lastCreatedAt: null,
   };
 
-  componentDidMount() {
-    GetUsers().then((rawUsers) => {
-      let {
-        users,
-        totalCampaigns,
-        totalUserInvites,
-        totalteamMembers,
-        lastCreatedAt,
-      } = FormatUserData(rawUsers);
-      this.setState({
-        users,
-        totalCampaigns,
-        totalUserInvites,
-        totalteamMembers,
-        lastCreatedAt,
-      });
+  async componentDidMount() {
+    const rawUsers = await GetUsers();
+    let {
+      users,
+      totalCampaigns,
+      totalUserInvites,
+      totalteamMembers,
+      lastCreatedAt,
+    } = FormatUserData(rawUsers)
+    this.setState({
+      users,
+      totalCampaigns,
+      totalUserInvites,
+      totalteamMembers,
+      lastCreatedAt,
     });
   }
+  
   render() {
     const {
       users,

@@ -1,7 +1,11 @@
-const GetUsers = () => {
-  return fetch(`http://localhost:3000/example_data.json`)
-    .then((res) => res.json())
-    .then((json) => json);
+const GetUsers = async () =>  {
+    try {
+      const response = await fetch(`http://localhost:3000/example_data.json`);
+      const json = await response.json();
+      return json;
+    } catch (error) {
+      console.log(error);
+    }
 };
 
 export default GetUsers;
