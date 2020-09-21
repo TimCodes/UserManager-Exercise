@@ -12,7 +12,10 @@ const FormatUserData = (users) => {
       acc.totalUserInvites += invited_users_count ? invited_users_count : 0;
       
       // convert to date obj for easier sorting
-      user["created_at"] = new Date(user["created_at"]);
+      user.created_at = new Date(user.created_at);
+
+      user.invites = invited_users_count;
+      user.campaigns =  published_campaigns_count;
       acc.users.push(user);
 
       return acc;
@@ -23,7 +26,7 @@ const FormatUserData = (users) => {
   
   // sort users desc by created_at date 
   userData.users.sort((a, b) => {
-    return b["created_at"] - a["created_at"];
+    return b.created_at - a.created_at;
   });
 
   // convert to datestring so react can render

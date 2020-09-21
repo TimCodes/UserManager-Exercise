@@ -24,17 +24,15 @@ const columns = [
   },
   { field: "email", headerName: "Email", width: 200 },
   {
-    field: "stats",
+    field: "invites",
     headerName: "Invites",
     width: 180,
-    valueGetter: (params) => `${params.value["invited_users_count"] || ""}`,
   },
   {
-    field: "stats",
-    headerName: "campaigns",
+    field: "campaigns",
+    headerName: "Campaigns",
     width: 180,
-    valueGetter: (params) =>
-      `${params.value["published_campaigns_count"] || ""}`,
+
   },
   { field: "created_at", headerName: "Date Created", width: 180 },
 ];
