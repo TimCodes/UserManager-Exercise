@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Link renders correctly 1`] = `
+<a
+  className="MuiTypography-root MuiLink-root MuiLink-underlineHover MuiTypography-colorPrimary"
+  onBlur={[Function]}
+  onFocus={[Function]}
+  page="http://www.facebook.com"
+>
+  Facebook
+</a>
+`;
+
+exports[`renders Users Header 1`] = `
+<div
+  style={
+    Object {
+      "height": "unset",
+      "overflow": "visible",
+      "width": "unset",
+    }
+  }
+/>
+`;
+
+exports[`renders Users Table 1`] = `
+<div
+  style={
+    Object {
+      "height": "unset",
+      "overflow": "visible",
+      "width": "unset",
+    }
+  }
+/>
+`;

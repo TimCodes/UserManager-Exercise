@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Users Header 1`] = `
+<div
+  className="MuiPaper-root MuiCard-root stats-card MuiPaper-elevation1 MuiPaper-rounded"
+>
+  <div
+    className="MuiCardContent-root"
+  >
+    <p
+      className="MuiTypography-root stats-card__title MuiTypography-body1"
+    >
+      teest
+    </p>
+    <hr
+      className="MuiDivider-root"
+    />
+    <p
+      className="MuiTypography-root stats-card__value MuiTypography-body1 MuiTypography-colorPrimary"
+    >
+      test
+    </p>
+  </div>
+</div>
+`;
